@@ -1,0 +1,135 @@
+:root {
+  --blanco: #ffffff;
+  --principal: rgba(109, 45, 45);
+  --amarillo: rgb(248, 252, 2);
+  --negro: #000000;
+  --font-family: 'Maven Pro', sans-serif;
+}
+
+html {
+  font-size: 62.5%; /** 1REM = 10pX **/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var();
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-weight: bold;
+  color: var(--principal);
+}
+.principal-parrrafo {
+  color: var(--blanco);
+  text-align: center;
+}
+
+em strong,
+p strong {
+  color: var(--amarillo);
+}
+/**Globales**/
+.contenedor {
+  max-width: 120rem;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 5rem;
+}
+.principal-imagen {
+  background-image: url(../img/barbershop-banner_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+}
+/**header**/
+.contenedor-header {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+}
+.contenedor-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contenedor-imagen {
+  width: 5rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor-navegacion {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+  }
+}
+.contenedor-navegacion a {
+  color: var(--principal);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.contenedor-navegacion a:hover {
+  background-color: var(--amarillo);
+}
+
+/**principal**/
+.principal {
+  background: var(--principal);
+}
+
+.items {
+  font-style: italic;
+}
+
+/***diferenciales*/
+.diferenciales {
+  background-color: #ffffff;
+  padding: 3rem;
+}
+.diferenciales ul {
+  display: inline-block;
+}
+.diferenciales-segmentacion {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .diferenciales-segmentacion {
+    display: flex;
+    justify-content: space-between;
+  }
+  .diferenciales-imagen {
+    max-width: 50%;
+  }
+}
+
+.diferenciales-imagen {
+  width: 100%;
+}
+
+/**footer**/
+.principal-footer {
+  color: var(--principal);
+  text-align: center;
+  font-weight: bold;
+}
