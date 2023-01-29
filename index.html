@@ -4,85 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <meta name="description" content="Página de una barberia" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- preload -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap"
+      rel="stylesheet"
+      as="font"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- preload -->
+    <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Barber Shop</title>
   </head>
 
   <body>
     <header class="header">
-      <div class="contenedor-header">
-        <div class="contenedor-logo">
-          <img class="contenedor-imagen" src="img/barbershop.png"" />
-          <h2>Barber Shop</h2>
+      <div class="contenedor">
+        <div class="barra">
+          <a href="#" class="logo">
+            <img class="logo__imagen" src="img/barbershop.png"" />
+            <h2 class="logo__nombre no-margin centrar-texto">Barber Shop</h2>
+          </a>
+
+          <nav class="navegacion">
+            <a href="#" class="navegacion_enlace">Nosotros</a>
+            <a href="#" class="navegacion_enlace">Peinados</a>
+            <a href="#" class="navegacion_enlace">Contacto</a>
+          </nav>
         </div>
-        <nav class="contenedor-navegacion">
-          <a href="#">Nosotros</a>
-          <a href="#">Cursos</a>
-          <a href="#">Contacto</a>
-        </nav>
+      </div>
+
+      <div class="header__texto">
+        <h1 class="no_margin">Elegancia y Estilo</h1>
+        <p class="no-margin">
+          Variados estilos, los mejor de la tendencia en moda
+        </p>
       </div>
     </header>
 
-    <div class="principal-imagen"></div>
-    <h1>Sobre la Barber Shop</h1>
-    <main class="contenedor principal">
-      <div>
-        <p class="principal-parrrafo">
-          Ubicada en el corazón de la ciudad, la
-          <strong>Barber Shop</strong> trae para el mercado lo que hay de mejor
-          para su cabello y barba. Fundada en 2020, la Barber Shop ya es
-          destaque en la ciudad y conquista nuevos clientes diariamente.
-        </p>
+    <div class="contenido-principal">
+      <main class="contenedor principal">
+        <div class="entrada">
+          <article class="entrada1">
+            <h2 class="centrar-texto">Los Mejores Peinados desde 1999</h2>
+            <p class="centrar-texto principal-parrrafo">
+              Ubicada en el corazón de la ciudad, la
+              <strong>Barber Shop</strong> trae para el mercado lo que hay de
+              mejor para su cabello y barba. Fundada en 2020, la Barber Shop ya
+              es destaque en la ciudad y conquista nuevos clientes diariamente.
+            </p>
+            <p class="centrar-texto principal-parrrafo">
+              <em
+                >Nuestra misión es:<strong
+                  >"Proporcionar autoestima y calidad de vida a nuestros
+                  clientes"
+                </strong></em
+              >
+              Ofrecemos profesionales experimentados que están constantemente
+              observando los cambios y movimiento en el mundo de la moda, para
+              así ofrecer a nuestros clientes las últimas tendencias. El
+              atendimiento posee un padrón de excelencia y agilidad,
+              garantizando calidad y satisfacción de nuestros clientes.
+            </p>
+          </article>
+          <article class="entrada2">
+            <img class="imagen" src="img/barberia_1_1.jpg" alt="" />
+            <img class="imagen" src="img/barberia_1_2.jpg" alt="" />
+            <img class="imagen" src="img/barberia_1_3.jpg" alt="" />
+          </article>
+        </div>
+      </main>
+    </div>
 
-        <p class="principal-parrrafo">
-          <em>
-            Nuestra misión es:
-            <strong>
-              "Proporcionar autoestima y calidad de vida a nuestros clientes" </strong
-            >.
-          </em>
-        </p>
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="grid-footer contenedor">
+        <div>
+          <h3>Categorias</h3>
 
-        <p class="principal-parrrafo">
-          Ofrecemos profesionales experimentados que están constantemente
-          observando los cambios y movimiento en el mundo de la moda, para así
-          ofrecer a nuestros clientes las últimas tendencias. El atendimiento
-          posee un padrón de excelencia y agilidad, garantizando calidad y
-          satisfacción de nuestros clientes.
-        </p>
-      </div>
+          <nav class="footer-menu">
+            <a href="#">Hombre</a>
+            <a href="#">Mujer</a>
+            <a href="#">Niños</a>
+            <a href="#">Tendecia</a>
+            <a href="#">Clasico</a>
+          </nav>
+        </div>
 
-      <div class="diferenciales">
-        <h2>Diferenciales</h2>
+        <div>
+          <h3>Sobre Nosotros</h3>
 
-        <div class="diferenciales-segmentacion">
-          <div>
-            <ul>
-              <li class="items">Atención personaliza a los Clientes</li>
-              <li class="items">Espacio diferenciado</li>
-              <li class="items">Localización</li>
-              <li class="items">Profesionales Calificados</li>
-              <li class="items">Cortes de moda</li>
-              <li class="items">Ofertas especiales</li>
-            </ul>
-          </div>
+          <nav class="footer-menu">
+            <a href="#">Nuestra Historia</a>
+            <a href="#">Misión, Visión y Valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Políticas de Privacidad</a>
+            <a href="#">Términos del Servicio</a>
+          </nav>
+        </div>
 
-          <img class="diferenciales-imagen" src="img/barberia_3.jpg" alt="" />
+        <div>
+          <h3>Soporte</h3>
+
+          <nav class="footer-menu">
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayuda en línea</a>
+            <a href="#">Confianza y Seguridad</a>
+          </nav>
         </div>
       </div>
-    </main>
 
-    <footer>
-      <p class="principal-footer">
-        ©️2023 Jorge L. Monzón. Derechos Reservados
-      </p>
+      <p class="copyright">Todos los derechos Reservados @jorgeDevmm - 2022</p>
     </footer>
   </body>
 </html>
