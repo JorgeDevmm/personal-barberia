@@ -233,6 +233,7 @@ img {
 
 .footer-menu a {
   display: block;
+  color: var(--blanco);
 }
 
 .copyright {
